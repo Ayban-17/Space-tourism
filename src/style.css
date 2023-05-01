@@ -22,7 +22,7 @@ body {
 
 .main-container {
   min-height: 100vh;
-  background-image: url("/starter-code/assets/home/background-home-mobile.jpg");
+  background-image: url("../assets/home/background-home-mobile.jpg");
   background-size: 100% 100%;
 }
 
@@ -327,7 +327,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   .main-container {
-    background-image: url("/starter-code/assets/home/background-home-tablet.jpg");
+    background-image: url("../assets/home/background-home-tablet.jpg");
     height: 100%;
     background-size: 100% 100%;
   }
@@ -477,7 +477,7 @@ hr {
 
 @media screen and (min-width: 1400px) {
   .main-container {
-    background-image: url("/starter-code/assets/home/background-home-desktop.jpg");
+    background-image: url("../assets/home/background-home-desktop.jpg");
     height: 100%;
     background-size: 100% 100%;
   }

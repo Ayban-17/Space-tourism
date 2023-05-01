@@ -127,7 +127,7 @@
 } */
 
 body {
-  background-image: url(/starter-code/assets/crew/background-crew-mobile.jpg);
+  background-image: url("../assets/crew/background-crew-mobile.jpg");
   background-size: 100% 100%;
 }
 
@@ -254,7 +254,7 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
     background-size: 100% 100%;
   }
 
@@ -315,6 +315,11 @@ body {
 }
 
 @media screen and (min-width: 1400px) {
+  body {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-size: 100% 100%;
+  }
+
   .crew__main-section {
     grid-template-columns: 900px 300px 1fr;
     grid-template-rows: 250px 1fr;
