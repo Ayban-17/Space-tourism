@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/tech.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="main-container" id="Space capsule">
+      <header class="home__header">
+        <img id="logo" src="assets/shared/logo.svg" alt="logo" />
+        <img
+          id="menu-icon"
+          src="assets/shared/icon-hamburger.svg"
+          alt="menu-icon"
+        />
+        <nav class="home__navbar hidden">
+          <img
+            id="close-icon"
+            src="assets/shared/icon-close.svg"
+            alt="close-icon"
+          />
+          <ul class="home__navbar_links-container">
+            <li class="home" onclick="goTo('index.html')">
+              00<a class="nav" href="index.html">HOME</a>
+            </li>
+            <li class="destinations" onclick="goTo('')">
+              01<a class="nav" href="#">DESTINATIONS</a>
+            </li>
+            <li class="crew" onclick="goTo('crew-commander.html')">
+              02<a class="nav" href="crew-commander.html">CREW</a>
+            </li>
+            <li
+              class="technology active"
+              onclick="goTo('technology-vehicle.html')"
+            >
+              03<a class="nav active" href="technology-vehicle.html"
+                >TECHNOLOGY</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="destination__main-section">
+        <div class="destination__main-section_top-container">
+          <header class="destination__main-section_top-container_header">
+            <h6>03</h6>
+            <h6>SPACE LAUNCH 101</h6>
+          </header>
+          <img id="image" src="" alt="" />
+
+          <nav class="destination__main-section_top-container_navbar">
+            <ul
+              class="destination__main-section_top-container_navbar-links-container"
+            >
+              <li onclick="goTo('technology-vehicle.html')" class="technology">
+                1
+              </li>
+              <li
+                onclick="goTo('technology-spaceport.html')"
+                class="technology"
+              >
+                2
+              </li>
+              <li
+                onclick="goTo('technology-capsule.html')"
+                class="technology active"
+              >
+                3
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <footer class="destination__footer description">
+          <div class="destination__footer_distance">
+            <h3 id="role">THE TERMINOLOGY...</h3>
+            <h1 id="name"></h1>
+          </div>
+          <div class="destination__footer_travel-time">
+            <p id="description"></p>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="src/main.js"></script>
+    <script src="src/tech.js"></script>
+  </body>
+</html>

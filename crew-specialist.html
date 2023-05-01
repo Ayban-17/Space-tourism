@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/crew.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="main-container" id="Mark Shuttleworth">
+      <header class="home__header">
+        <img id="logo" src="assets/shared/logo.svg" alt="logo" />
+        <img
+          id="menu-icon"
+          src="assets/shared/icon-hamburger.svg"
+          alt="menu-icon"
+        />
+        <nav class="home__navbar hidden">
+          <img
+            id="close-icon"
+            src="assets/shared/icon-close.svg"
+            alt="close-icon"
+          />
+          <ul class="home__navbar_links-container">
+            <li class="home" onclick="goTo('index.html')">
+              00<a class="nav" href="index.html">HOME</a>
+            </li>
+            <li class="destinations" onclick="goTo('destination-moon.html')">
+              01<a class="nav" href="destination-moon.html">DESTINATIONS</a>
+            </li>
+            <li class="crew active" onclick="goTo('crew-commander.html')">
+              02<a class="nav active" href="crew-commander.html">CREW</a>
+            </li>
+            <li class="technology" onclick="goTo('technology-vehicle.html')">
+              03<a class="nav" href="technology-vehicle.html">TECHNOLOGY</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="crew__main-section">
+        <header class="crew__main-section_header">
+          <h6>02</h6>
+          <h6>MEET YOUR CREW</h6>
+        </header>
+
+        <div class="image-container">
+          <img class="image specialist" />
+        </div>
+
+        <div class="crew__information">
+          <nav class="nav">
+            <ul>
+              <li onclick="goTo('crew-commander.html')" class="crew"></li>
+              <li
+                onclick="goTo('crew-specialist.html')"
+                class="crew active"
+              ></li>
+              <li onclick="goTo('crew-pilot.html')" class="crew"></li>
+              <li onclick="goTo('crew-engineer.html')" class="crew"></li>
+            </ul>
+          </nav>
+          <div class="role"></div>
+          <div class="name"></div>
+          <div class="bio"></div>
+        </div>
+      </main>
+    </div>
+    <script src="src/main.js"></script>
+    <script src="src/crew.js"></script>
+  </body>
+</html>

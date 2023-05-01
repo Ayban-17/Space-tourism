@@ -1,0 +1,136 @@
+.main-container {
+  background-image: url("/starter-code/assets/technology/background-technology-mobile.jpg");
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+#image {
+  width: 375px;
+}
+
+.destination__main-section_top-container_navbar {
+  padding: 0.5rem 0;
+}
+
+.destination__main-section_top-container_navbar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 1.3rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.destination__main-section_top-container_navbar li.active {
+  background-color: var(--primary);
+  color: #000000;
+}
+
+.description {
+  padding: 0 1rem;
+}
+
+.destination__footer_travel-time {
+  padding: 0 0.5rem 5rem 0.5rem;
+}
+
+#description {
+  font-family: var(--font-barlow);
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 25px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    background-image: url("/starter-code/assets/technology/background-technology-tablet.jpg");
+    height: 100%;
+    background-size: 100% 100%;
+  }
+
+  #image {
+    width: 768px;
+    height: 310px;
+    margin-bottom: 56px;
+  }
+
+  .destination__main-section_top-container_navbar-links-container {
+    margin-bottom: 44px;
+  }
+
+  .destination__footer {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #name {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+  }
+
+  #description {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .main-container {
+    background-image: url("/starter-code/assets/technology/background-technology-desktop.jpg");
+    height: 100%;
+    background-size: 100% 100%;
+    position: relative;
+  }
+
+  #image {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 500px;
+    height: 500px;
+  }
+
+  .destination__main-section_top-container_navbar-links-container {
+    flex-direction: column;
+    position: absolute;
+    top: 43%;
+    left: 12%;
+  }
+
+  .destination__main-section_top-container_navbar-links-container li {
+    width: 70px;
+    height: 70px;
+  }
+
+  .destination__footer {
+    position: absolute;
+    top: 41%;
+    left: 20%;
+  }
+
+  #role {
+    padding-left: 2.3rem;
+  }
+
+  #name {
+    padding-left: 2rem;
+  }
+
+  #description {
+    padding: 0 1.7rem;
+    text-align: left;
+    font-size: 18px;
+    line-height: 32px;
+    width: 500px;
+    border: 0;
+  }
+}
+
+@media screen and (min-width: 1499px) {
+  #image {
+    top: 20%;
+  }
+}
